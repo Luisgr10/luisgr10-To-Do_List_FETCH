@@ -1,12 +1,49 @@
+body {
+    margin-top: 100px;
+    padding: auto;
+    background-color: blanchedalmond;
+}
 
-/* 
+.container {
+    width: 530px;
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+}
+h1 {
+    text-align: center;
+    padding: 30px;
+    margin: 36px;
+    text-decoration-line: underline;
+   
+}
 
-*/
+ul li {
+    border: 1px solid black;
+    list-style: none;
+    padding: 5px;
+    
+}
+
+input {
+    border: none;
+    width: 100%;
+    background-color: blanchedalmond;
+}
+
+i {
+    float: right;
+    margin: auto 17px;
+    padding: 3px;
+    opacity: 0; /* Establece la opacidad inicial a 0 para que el elemento sea invisible */
+    transition: opacity 0.3s ease; /* Agregar una transición para suavizar el efecto */
+}
+
+i:hover {
+    opacity: 1; /* Cuando el mouse está sobre el elemento, establecer la opacidad a 1 para hacerlo visible */
+    background-color: transparent;
+    color: black;
+}
+
+
+.counterTask {
+    margin-top: 20px;
+}

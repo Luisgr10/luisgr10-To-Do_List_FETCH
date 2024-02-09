@@ -1,11 +1,14 @@
 body {
-    margin-top: 100px;
-    padding: auto;
-    background-color: blanchedalmond;
+    margin: 50px 387px;
+    padding: 60px;
+    background-color: whitesmoke;
+    border: 3px black solid;
+    border-radius: 5px;
 }
 
+
 .container {
-    width: 530px;
+    width: auto;
 
 }
 h1 {
@@ -13,20 +16,24 @@ h1 {
     padding: 30px;
     margin: 36px;
     text-decoration-line: underline;
+    font-size: 100px;
    
 }
 
 ul li {
     border: 1px solid black;
     list-style: none;
-    padding: 5px;
+    padding: 10px;
+    border-radius: 3px;
+    
     
 }
 
 input {
     border: none;
     width: 100%;
-    background-color: blanchedalmond;
+    background-color: whitesmoke;
+    text-align: center;
 }
 
 i {
@@ -47,3 +54,4 @@ i:hover {
 .counterTask {
     margin-top: 20px;
 }
+

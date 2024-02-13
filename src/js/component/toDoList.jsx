@@ -24,7 +24,11 @@ const Todo = () => {
     };
 
     fetch('https://playground.4geeks.com/apis/fake/todos/user/Luisgr10', options)
-      .then(response => response.json())
+      .then( (response) => {
+        if (!response.ok ) {
+          createUser()
+        } else return (response.json())
+      })
       .then(data => setToDoList(data))
       .catch(err => {
         if (err.status === 404) { createUser() }
@@ -60,7 +64,10 @@ const Todo = () => {
 
   const deleteTask = (id) => {
     const updatedTaskList = toDoList.filter((task) => task.id !== id);
-
+    if (updatedTaskList.length === 0) {
+      const defaultTask = {label:"Estas al dìa!", done: false}
+      updatedTaskList.push(defaultTask)
+    } 
     const options = {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json', 'User-Agent': 'insomnia/8.6.0' },
